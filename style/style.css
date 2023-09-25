@@ -1,7 +1,170 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Mobile first design */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree";
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+h1,
+h2 {
+  color: var(--Dark-Grayish-Blue);
+}
+p {
+  color: var(--Grayish-Blue);
+  font-size: 18px;
+}
+header {
+  width: 100%;
+  height: max-content;
+  padding: 2rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+header img {
+  width: 150px;
+}
+
+main {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+main > section {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+main :nth-child(1) h1,
+main > section h2 {
+  position: relative;
+  width: 240px;
+  margin: 15px auto;
+}
+
+button {
+  margin: 1.2rem auto;
+  display: block;
+  padding: 1rem;
+  width: 80%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #ffff;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.ios-btn {
+  /* to style ios button */
+  background-color: var(--Strong-Cyan);
+  border-bottom: 3px groove var(--Strong-Cyan);
+  box-shadow: 0px 3px 12px -2px var(--Strong-Cyan);
+}
+
+.mac-btn {
+  background-color: var(--Light-Blue);
+  border-bottom: 3px groove var(--Light-Blue);
+  box-shadow: 0px 3px 12px -2px var(--Light-Blue);
+}
+
+
+.img-container {
+  position: relative;
+  width: 100%;
+  /* margin: 4rem 0; */
+}
+
+.img-container img {
+  width: 400px;
+}
+
+.wrapper div {
+  /* Container of the divs */
+  margin: 4rem 0;
+}
+
+.sponsor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsor img {
+  width: 100px;
+  margin: 2rem 0;
+}
+
+main :last-child h2 {
+  width: 70%;
+}
+
+main :last-child p {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+footer {
+  width: 100%;
+  margin-top: 15rem;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+footer ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+}
+footer ul li {
+  padding: 1rem 0;
+}
+li img {
+  width: 50px;
+  margin-top: 3rem;
+}
+.social-media {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media img {
+  /* To make space between social media images */
+  padding: 0 1rem;
 }
