@@ -79,6 +79,7 @@ button {
   border-left: none;
   color: #ffff;
   font-weight: 600;
+  cursor: pointer;
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
@@ -99,16 +100,14 @@ button {
   box-shadow: 0px 3px 12px -2px var(--Light-Blue);
 }
 
-
 .img-container {
   position: relative;
   width: 100%;
-  /* margin: 4rem 0; */
 }
 
 .img-container img {
   width: 250px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .wrapper div {
@@ -168,4 +167,152 @@ li img {
 .social-media img {
   /* To make space between social media images */
   padding: 0 1rem;
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  main :nth-child(1) h1,
+  main > section h2 {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  main :nth-child(1) p {
+    width: 600px;
+    margin: 1rem auto;
+  }
+
+  button {
+    display: inline;
+    width: 300px;
+    margin: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .img-container img {
+    width: 600px;
+  }
+
+  .wrapper > div h2 {
+    margin: 0;
+  }
+
+  .wrapper > div p {
+    /* This to make the paragraph align to the left and reset from the mobile settings*/
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .head-lines {
+    /* To move the search text to right */
+    position: relative;
+    right: 5rem;
+  }
+
+  .devices-image {
+    /* To add space between the image of devices and the text */
+    margin: 4rem 0;
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  .icons div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .icons div h2,
+  .icons div p {
+    width: 100%;
+  }
+  .icons div p {
+    line-height: 2rem;
+  }
+  .icons img {
+    width: 50px;
+    margin: 1rem auto;
+  }
+
+  .icons :first-child p {
+    /*  to reset the margin of the first paragraph */
+    position: relative;
+    margin: 40px 0;
+  }
+
+  /* Here goes the sponsors  */
+
+  .sponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4rem 0;
+  }
+
+  .sponsor img {
+    width: 100px;
+  }
+
+  /* Starting footer */
+
+  footer section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  ul li {
+    margin: 0 2rem;
+  }
+
+  .footer-img {
+    margin: 0 2rem;
+  }
+
 }
